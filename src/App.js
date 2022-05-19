@@ -1,5 +1,11 @@
+import CounterContainer from "./containers/CounterContainer";
+
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <CounterContainer />
+    </div>
+  );
 };
 
 export default App;
