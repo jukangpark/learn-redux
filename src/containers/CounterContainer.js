@@ -4,6 +4,9 @@ import { increase, decrease, setDiff } from "../modules/counter";
 
 const CounterContainer = () => {
   // useSelector 는 리덕스 스토어의 상태를 조회하는 Hook 입니다.
+  // 기본적으로, useSelector 를 사용해서 리덕스 스토어의 상태를 조회할 땐
+  // 만약 상태가 바뀌지 않았으면 리렌더링 하지 않습니다.
+
   // state 의 값은 store.getState() 함수를 호출했을 때 나타나는 결과물과 동일합니다.
 
   const { number, diff } = useSelector((state) => ({
